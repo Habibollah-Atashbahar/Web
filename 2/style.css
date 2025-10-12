@@ -1,0 +1,19 @@
+/* https://coolors.co */
+
+body {
+  background-color: #f8f9fa;
+}
+
+h1 {
+  /* RGB */
+  /* Red:0-255  Green:0-255  Blue:0-255 */
+  /* color: rgb(100, 100, 100); */
+  /* RGBA */
+  /* A: Alpha ===> opacity */
+  /* background-color: rgba(224, 235, 222, 0.9); */
+
+  /* Hexadecimal == Hex (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F) */
+  /* Red  Green  Blue ==> 00 to FF */
+  /* RRGGBB */
+  background-color: #e7e7e7;
+}

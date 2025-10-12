@@ -1,0 +1,40 @@
+/*  Cascading Style Sheet */
+/*  External Css: */
+/* Comment */
+
+/* Universal Selector  */
+* {
+  padding: 20;
+  margin: 30;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* Select Class Elements ( . ) ==> can use many times same class name for elems */
+/* .par {
+  color: red;
+  background-color: pink;
+} */
+
+/* Select Id Elements ( # ) ==> can use one id name for each elems  */
+/* #title {
+  color: yellowgreen;
+} */
+/* #price {
+  color: chartreuse;
+}
+
+/* Element Selector ===> h1, div, p, img, video */
+/* body {
+  background-color: burlywood;
+  color: red;
+}
+span {
+  color: red;
+} */
+
+/* grouping Selector ===> many element together  */
+/* h1,
+div,
+p {
+  color: blueviolet;
+} */
