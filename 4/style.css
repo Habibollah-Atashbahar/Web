@@ -1,0 +1,43 @@
+/* Using font face */
+@font-face {
+  font-family: "Yekan";
+  src: url("./Yekan-Font/Yekan.eot"); /* IE9 Compat Modes */
+  src: url("Yekan.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./Yekan-Font/Yekan.woff2") format("woff2"),
+    /* Modern Browsers */ url("./Yekan-Font/Yekan.woff") format("woff"),
+    /* Modern Browsers */ url("./Yekan-Font/Yekan.otf") format("opentype"),
+    /* Open Type Font */ url("./Yekan-Font/Yekan.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+/* Use yekan font */
+body {
+  font-family: Yekan;
+}
+
+/* Text-align: for center or other placement and Text-indent: for the initial distance  */
+.p {
+  font-weight: 600;
+  font-style: italic;
+  background-color: aqua;
+  /* text-align: center;  */
+  text-indent: 20px;
+}
+
+/* Line and Word Spacing */
+.second-p {
+  line-height: 30px;
+  text-decoration: underline;
+  /* text-transform: capitalize; for english words  */
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  font-size: 1.4rem;
+}
+
+/* font shorthand: */
+/* weight style size/height family -- a way for write fewer code -- */
+.third {
+  font: 500 italic 1.2rem/2rem Arial;
+}
