@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e2e2e1;
+}
+
+/* Position */
+
+i {
+  color: gray;
+  font-size: 10px;
+  position: relative;
+  top: -1px;
+  right: 175px;
+}
+
+.parent {
+  height: 1000px;
+  background-color: aqua;
+  margin: 20px;
+  /* position: relative; */
+  /* left: 60px;
+  top: 10px; */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.child {
+  background-color: yellow;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 20px;
+  /* position: absolute; */
+  top: 10px;
+  /* left: 100px; */
+  right: 20px;
+  /* font-size: 10px; */
+  padding: 5px;
+}
+
+.third {
+  height: 1200px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.nav {
+  text-align: center;
+  height: 100px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  position: sticky;
+  top: 5px;
+  z-index: 10;
+}
+
+.navbar {
+  text-align: center;
+  height: 100px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: yellowgreen;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  position: sticky;
+  top: 5px;
+  z-index: 8;
+}
+
+.navbar-2 {
+  text-align: center;
+  height: 100px;
+  width: calc(100% - 70px);
+  padding-top: 5px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: yellow;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  position: fixed;
+  top: 10px;
+  z-index: 1000;
+}
+
+/* Psedo elements */
+.child::after {
+  content: " after child";
+  background-color: aqua;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* psedo class */
+.child:hover {
+  background-color: aliceblue;
+  width: 500px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+/* next psedo class  */
+ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: aqua;
+}
+
+/*  more selector (>) */
+.third > h1 {
+  color: red;
+}
+
+.third > h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* ([]) */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a[href="google.com"] {
+  color: red;
+}
+
+/* (::first-letter first-line) */
+
+p::first-letter {
+  color: red;
+  text-transform: capitalize;
+}
+
+p::first-line {
+  text-decoration: overline;
+}
+
+/* text-shadow */
+.grand {
+  text-shadow: 10px 10px 10px red;
+}
+
+/* box-shadow */
+.third {
+  box-shadow: -10px 10px 50px black;
+}

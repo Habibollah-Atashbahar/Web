@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 
+div {
+  background-color: aqua;
+  height: 50px; */
+/* position: relative; */
+/* margin: 10px;
+  border-radius: 10px;
+} */
+
+/* i {
+  color: gray;
+  font-size: 13px; */
+
+/* Relative */
+/* position: relative; */
+/* right: 168px; */
+/* left: 10px; */
+/* top: 20px; */
+/* bottom: 10px; */
+/* 
+  position: absolute;
+  left: 50px;
+  top: 3px; */
+/* bottom: 10px; */
+/* } */
+
+.parent {
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.parent div {
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+}
+.navbar {
+  background-color: yellowgreen;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+}
+
+.navbar-2,
+.child {
+  background-color: yellow;
+  opacity: 0.8;
+}
+
+.parent .nav {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+}
+
+.nav {
+  position: fixed;
+  /* top: 0; */
+  z-index: 1000;
+  bottom: 10px;
+}
+
+.third {
+  background-color: bisque;
+  margin: 10px;
+  height: 1000px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* psedo element */
+.child::after {
+  content: "Hello";
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+  margin-left: 10px;
+}
+
+.child::before {
+  content: "Hello";
+  margin-right: 10px;
+  background-color: antiquewhite;
+  color: red;
+  display: block;
+}
+
+/* psedo class */
+.navbar:hover {
+  background-color: rgb(255, 4, 255);
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: overline;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* Selectors */
+ul li:first-child {
+  color: purple;
+}
+
+ul li:last-child {
+  color: purple;
+}
+
+.third > h1 {
+  color: red;
+}
+
+a[href="google.com"] {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* more psedo class's */
+p::first-letter {
+  text-transform: capitalize;
+  color: violet;
+}
+
+p::first-line {
+  text-transform: uppercase;
+  color: blueviolet;
+}
+
+/* Text-shadow and box-shadow (x, y, fade, color) with px */
+.third div {
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  text-shadow: 8px 8px 10px blueviolet;
+  box-shadow: 5px 5px 10px black;
+}
